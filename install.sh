@@ -13,7 +13,7 @@ UNIT_DIR="$HOME/.config/systemd/user"
 AUTOSTART_DIR="$HOME/.config/autostart"
 ICON_NAME="chair-monitor"
 WT9011_URL="https://github.com/chenweidu666/APP-WT9011DCL-BT50-Linux.git"
-WT9011_LOCAL="$HOME/Linux-App/01/APP-WT9011DCL-BT50-Linux"
+WT9011_LOCAL="$HOME/Linux-App/01-WT9011DCL-BT50/APP-WT9011DCL-BT50-Linux"
 
 die() { echo "错误：$*" >&2; exit 1; }
 
