@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" width="256" height="256">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#1b2631"/>
+      <stop offset="1" stop-color="#0d141b"/>
+    </linearGradient>
+    <clipPath id="ball"><circle cx="128" cy="128" r="86"/></clipPath>
+  </defs>
+
+  <rect x="8" y="8" width="240" height="240" rx="52" fill="url(#bg)"/>
+  <rect x="8" y="8" width="240" height="240" rx="52" fill="none" stroke="#2c3e50" stroke-width="3"/>
+
+  <!-- 姿态球：天 / 地，略微倾斜表示 roll -->
+  <g clip-path="url(#ball)">
+    <g transform="rotate(-18 128 128)">
+      <rect x="20" y="20" width="216" height="108" fill="#1f6f8b"/>
+      <rect x="20" y="128" width="216" height="110" fill="#6b4423"/>
+      <rect x="20" y="124" width="216" height="7" fill="#ffffff" opacity="0.9"/>
+      <g stroke="#ffffff" stroke-opacity="0.55" stroke-width="3">
+        <line x1="78" y1="96" x2="178" y2="96"/>
+        <line x1="94" y1="70" x2="162" y2="70"/>
+      </g>
+    </g>
+  </g>
+
+  <!-- 外圈 -->
+  <circle cx="128" cy="128" r="86" fill="none" stroke="#e8eef3" stroke-width="4"/>
+
+  <!-- 固定机翼 -->
+  <g stroke="#ffcc00" stroke-width="9" stroke-linecap="round" fill="none">
+    <line x1="70" y1="128" x2="104" y2="128"/>
+    <line x1="152" y1="128" x2="186" y2="128"/>
+  </g>
+  <circle cx="128" cy="128" r="5" fill="#ffcc00"/>
+
+  <!-- 蓝牙标记（右下角） -->
+  <g transform="translate(196 196)" fill="#4ea8de">
+    <path d="M0 -22 L14 -10 L0 2 L0 -22 Z"/>
+    <path d="M0 22 L14 10 L0 -2 L0 22 Z"/>
+    <path d="M-9 -16 L14 2 L-9 20" fill="none" stroke="#4ea8de" stroke-width="4" stroke-linecap="round"/>
+  </g>
+</svg>

@@ -1,0 +1,7 @@
+# BLE 通信
+bleak>=0.21
+# 协议/连接实现（同链路的开源库；install.sh 会自动处理）
+# wt9011-linux @ git+https://github.com/chenweidu666/APP-WT9011DCL-BT50-Linux.git
+
+# 托盘界面（可选，无界面模式不需要）
+PySide6>=6.5
